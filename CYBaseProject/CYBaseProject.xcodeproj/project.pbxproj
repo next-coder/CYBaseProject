@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610ABA1A1CC8A6140021025C /* UIFont+CYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 610ABA191CC8A6140021025C /* UIFont+CYUtils.m */; };
+		610ABA1D1CC8A7D90021025C /* UIScreen+CYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 610ABA1C1CC8A7D90021025C /* UIScreen+CYUtils.m */; };
+		610ABA201CC8CE6B0021025C /* UIDevice+CYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 610ABA1F1CC8CE6B0021025C /* UIDevice+CYUtils.m */; };
 		615000061CC0D35C00CF9C6F /* CYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 615000051CC0D35C00CF9C6F /* CYBaseModel.m */; };
 		615000091CC0D36B00CF9C6F /* CYBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 615000081CC0D36B00CF9C6F /* CYBaseService.m */; };
 		6150000F1CC0D3B800CF9C6F /* CYBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6150000E1CC0D3B800CF9C6F /* CYBaseView.m */; };
@@ -50,6 +53,12 @@
 
 /* Begin PBXFileReference section */
 		4D9D736742779773709690D9 /* Pods-CYBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYBaseProject/Pods-CYBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		610ABA181CC8A6140021025C /* UIFont+CYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+CYUtils.h"; sourceTree = "<group>"; };
+		610ABA191CC8A6140021025C /* UIFont+CYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+CYUtils.m"; sourceTree = "<group>"; };
+		610ABA1B1CC8A7D90021025C /* UIScreen+CYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CYUtils.h"; sourceTree = "<group>"; };
+		610ABA1C1CC8A7D90021025C /* UIScreen+CYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CYUtils.m"; sourceTree = "<group>"; };
+		610ABA1E1CC8CE6B0021025C /* UIDevice+CYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+CYUtils.h"; sourceTree = "<group>"; };
+		610ABA1F1CC8CE6B0021025C /* UIDevice+CYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+CYUtils.m"; sourceTree = "<group>"; };
 		615000041CC0D35C00CF9C6F /* CYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseModel.h; sourceTree = "<group>"; };
 		615000051CC0D35C00CF9C6F /* CYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseModel.m; sourceTree = "<group>"; };
 		615000071CC0D36B00CF9C6F /* CYBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseService.h; sourceTree = "<group>"; };
@@ -140,6 +149,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		610ABA171CC8A5FE0021025C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		615000001CC0D33500CF9C6F /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +246,7 @@
 		615000321CC0D6CA00CF9C6F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				610ABA171CC8A5FE0021025C /* Common */,
 				6150003E1CC0D6FE00CF9C6F /* Network */,
 				6150003D1CC0D6EC00CF9C6F /* UI */,
 				615000331CC0D6CA00CF9C6F /* Foundation */,
@@ -267,6 +284,12 @@
 				6150005F1CC0DD4800CF9C6F /* UIImage+CYUtils.m */,
 				615000581CC0DCBC00CF9C6F /* MBProgressHUD+EUUtils.h */,
 				615000591CC0DCBC00CF9C6F /* MBProgressHUD+EUUtils.m */,
+				610ABA181CC8A6140021025C /* UIFont+CYUtils.h */,
+				610ABA191CC8A6140021025C /* UIFont+CYUtils.m */,
+				610ABA1B1CC8A7D90021025C /* UIScreen+CYUtils.h */,
+				610ABA1C1CC8A7D90021025C /* UIScreen+CYUtils.m */,
+				610ABA1E1CC8CE6B0021025C /* UIDevice+CYUtils.h */,
+				610ABA1F1CC8CE6B0021025C /* UIDevice+CYUtils.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -524,6 +547,8 @@
 			files = (
 				615000391CC0D6D600CF9C6F /* NSDictionary+CYJson.m in Sources */,
 				6150005D1CC0DCBC00CF9C6F /* MBProgressHUD+EUUtils.m in Sources */,
+				610ABA1D1CC8A7D90021025C /* UIScreen+CYUtils.m in Sources */,
+				610ABA1A1CC8A6140021025C /* UIFont+CYUtils.m in Sources */,
 				615000061CC0D35C00CF9C6F /* CYBaseModel.m in Sources */,
 				615000091CC0D36B00CF9C6F /* CYBaseService.m in Sources */,
 				6150002C1CC0D4AB00CF9C6F /* CYPullRefreshHeaderView.m in Sources */,
@@ -543,6 +568,7 @@
 				615000441CC0D75900CF9C6F /* UIScrollView+CYUtils.m in Sources */,
 				6150005C1CC0DCBC00CF9C6F /* UIColor+CYUtils.m in Sources */,
 				615000411CC0D72D00CF9C6F /* UIView+CYAnimationUtil.m in Sources */,
+				610ABA201CC8CE6B0021025C /* UIDevice+CYUtils.m in Sources */,
 				6150004F1CC0DA5900CF9C6F /* CYPageModel.m in Sources */,
 				615000471CC0D7A400CF9C6F /* CYHTTPClient.m in Sources */,
 				6150004C1CC0DA1B00CF9C6F /* CYResponseStatusModel.m in Sources */,

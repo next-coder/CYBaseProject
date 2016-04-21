@@ -166,11 +166,13 @@ class PullRefreshFooterView: PullRefreshBaseView {
                 self.center = CGPoint(x: self.center.x,
                                       y: contentSize.height + self.frame.size.height / 2.0)
             }
+        } else {
+            
+            super.observeValueForKeyPath(keyPath,
+                                         ofObject: object,
+                                         change: change,
+                                         context: context)
         }
-        super.observeValueForKeyPath(keyPath,
-                                     ofObject: object,
-                                     change: change,
-                                     context: context)
     }
 
 }

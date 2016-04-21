@@ -56,17 +56,17 @@ class PullRefreshBaseView: UIView {
     // observe scrollView's contentOffset, for showing pull refresh or load more
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         
-        if let key = keyPath {
-            if key == "contentOffset" {
-                
-                let oldValue = change?[NSKeyValueChangeOldKey]?.CGPointValue()
-                let newValue = change?[NSKeyValueChangeNewKey]?.CGPointValue()
-                
-                self.scrollContentOffsetChanged(oldValue, to: newValue)
-            }
+        if let key = keyPath where key == "contentOffset" {
+            
+            let oldValue = change?[NSKeyValueChangeOldKey]?.CGPointValue()
+            let newValue = change?[NSKeyValueChangeNewKey]?.CGPointValue()
+            
+            self.scrollContentOffsetChanged(oldValue, to: newValue)
+        } else {
+            
+            super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
         }
         
-        super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
     }
     
     func scrollContentOffsetChanged(from: CGPoint?, to: CGPoint?) {

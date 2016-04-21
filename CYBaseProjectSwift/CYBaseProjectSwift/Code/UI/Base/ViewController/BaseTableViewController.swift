@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseTableViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
+class BaseTableViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate, PullRefreshHeaderDelegate, PullRefreshFooterDelegate {
     
     var tableView: UITableView!
     var tableViewStyle: UITableViewStyle
@@ -52,6 +52,7 @@ class BaseTableViewController: BaseViewController, UITableViewDataSource, UITabl
                                                                     height: 45),
                                                       scrollView: table)
             table.addSubview(refreshHeader)
+            refreshHeader.delegate = self
             self.refreshHeaderView = refreshHeader
         }
     }
@@ -66,6 +67,7 @@ class BaseTableViewController: BaseViewController, UITableViewDataSource, UITabl
                                                                     height: 45),
                                                       scrollView: table)
             table.addSubview(refreshFooter)
+            refreshFooter.delegate = self
             self.refreshFooterView = refreshFooter
         }
     }
