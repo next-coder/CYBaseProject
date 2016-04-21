@@ -70,17 +70,16 @@ class TestTableViewController: BaseTableViewController {
     // PullRefreshFooterDelegate
     func pullRefreshFooterDidStartLoadMore(footerView: PullRefreshFooterView) {
         
-        if let _ = self.datas {
-            
-            //            self.datas?.appendContentsOf(["hahahahah", "ahhfhfhd", "fdasfsafsdaf", "ddddddd"])
-            self.datas!.insertContentsOf(["hahahahah", "ahhfhfhd", "fdasfsafsdaf", "ddddddd"], at: 0)
-        } else {
-            
-            self.datas = ["bbbb", "cccc", "dddd", "eee", "ffff", "gggg", "hhhhhh", "iiiiii", "jjjjj", "kkkkk", "lllll", "mmmmmm", "nnnnn", "hahaha"]
-        }
-        
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)(NSEC_PER_SEC * 3)), dispatch_get_main_queue()) {
             
+            if let _ = self.datas {
+                
+                //            self.datas?.appendContentsOf(["hahahahah", "ahhfhfhd", "fdasfsafsdaf", "ddddddd"])
+                self.datas!.appendContentsOf(["hahahahah", "ahhfhfhd", "fdasfsafsdaf", "ddddddd"])
+            } else {
+                
+                self.datas = ["bbbb", "cccc", "dddd", "eee", "ffff", "gggg", "hhhhhh", "iiiiii", "jjjjj", "kkkkk", "lllll", "mmmmmm", "nnnnn", "hahaha"]
+            }
             self.refreshFooterView?.endLoadMore()
             self.tableView.reloadData()
         }

@@ -34,12 +34,6 @@ class PullRefreshHeaderView: PullRefreshBaseView {
         }
     }
     
-    // move to super to start animating
-    override func didMoveToSuperview() {
-        
-        self.activityIndicatorView?.startAnimating()
-    }
-    
     // remove from super to stop animating
     override func removeFromSuperview() {
         

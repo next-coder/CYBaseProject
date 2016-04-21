@@ -17,7 +17,7 @@ class PullRefreshBaseView: UIView {
         
         self.scrollView = scrollView
         
-        let indicator = UIActivityIndicatorView()
+        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
         indicator.autoresizingMask = [.FlexibleTopMargin, .FlexibleLeftMargin, .FlexibleBottomMargin, .FlexibleRightMargin]
         self.activityIndicatorView = indicator
         
@@ -52,6 +52,11 @@ class PullRefreshBaseView: UIView {
         }
     }
     
+    // move to super to start animating
+    override func didMoveToSuperview() {
+        
+        self.activityIndicatorView?.startAnimating()
+    }
     
     // observe scrollView's contentOffset, for showing pull refresh or load more
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {

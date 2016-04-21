@@ -82,12 +82,16 @@ class PullRefreshFooterView: PullRefreshBaseView {
         
         if let scroll = self.scrollView {
             
-            let loadMoreMinOffsetY = scroll.contentSize.height + scroll.contentInset.bottom + self.frame.size.height - scroll.frame.size.height
+            var loadMoreMinOffsetY = scroll.contentSize.height + scroll.contentInset.bottom - scroll.frame.size.height
+            if loadMoreMinOffsetY < self.frame.size.height {
+                
+                loadMoreMinOffsetY = self.frame.size.height
+            }
             
             if let toOffset = to {
                 
                 if self.loadMoreState == .Idle
-                    && toOffset.y >= loadMoreMinOffsetY {
+                    && toOffset.y >= loadMoreMinOffsetY{
                     
                     self.loadMoreState = .Loading
                     
