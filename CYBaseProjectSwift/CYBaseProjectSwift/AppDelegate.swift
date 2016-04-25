@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = TestTableViewController(style: .Plain)
         self.window?.makeKeyAndVisible()
+        
+        CommonHTTPClient.request()
         return true
     }
 

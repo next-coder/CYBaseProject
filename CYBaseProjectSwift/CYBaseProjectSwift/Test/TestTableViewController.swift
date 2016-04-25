@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class TestTableViewController: BaseTableViewController {
     
@@ -41,9 +42,11 @@ class TestTableViewController: BaseTableViewController {
         if cell == nil {
             
             cell = UITableViewCell(style: .Default, reuseIdentifier: "UITableViewCell")
+//            cell!.textLabel?.backgroundColor = UIColor.colorFromHexString("#ff0000")
         }
         
         cell!.textLabel?.text = self.datas?[indexPath.row]
+        cell!.contentView.backgroundColor = UIColor.colorFromHexString("ff0000")
         
         return cell!
     }
@@ -70,8 +73,10 @@ class TestTableViewController: BaseTableViewController {
     // PullRefreshFooterDelegate
     func pullRefreshFooterDidStartLoadMore(footerView: PullRefreshFooterView) {
         
+        let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)(NSEC_PER_SEC * 3)), dispatch_get_main_queue()) {
             
+            hud.hide(true)
             if let _ = self.datas {
                 
                 //            self.datas?.appendContentsOf(["hahahahah", "ahhfhfhd", "fdasfsafsdaf", "ddddddd"])

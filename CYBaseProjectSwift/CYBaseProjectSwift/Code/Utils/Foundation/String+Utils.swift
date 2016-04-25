@@ -14,4 +14,9 @@ extension String {
         
         return NSLocalizedString(self, comment: comment)
     }
+    
+    func floatValue() -> Float {
+        
+        return (self as NSString).floatValue
+    }
 }

@@ -23,9 +23,18 @@
 		611944961CC4DB6F001681F2 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611944951CC4DB6F001681F2 /* PageModel.swift */; };
 		611944981CC4E2B5001681F2 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611944971CC4E2B5001681F2 /* BaseTableViewController.swift */; };
 		611944A41CC50A88001681F2 /* PullRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611944A31CC50A88001681F2 /* PullRefreshBaseView.swift */; };
+		61FA85C61CC9F75100CA39B9 /* UIColor+CYUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FA85C51CC9F75100CA39B9 /* UIColor+CYUtils.swift */; };
+		61FA85C81CC9FB6500CA39B9 /* UIImage+CYUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FA85C71CC9FB6500CA39B9 /* UIImage+CYUtils.swift */; };
+		61FA85CA1CC9FD5600CA39B9 /* UIFont+CYUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FA85C91CC9FD5600CA39B9 /* UIFont+CYUtils.swift */; };
+		61FA85CC1CC9FD8B00CA39B9 /* UIScreen+CYUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FA85CB1CC9FD8B00CA39B9 /* UIScreen+CYUtils.swift */; };
+		61FA85CE1CCA05CA00CA39B9 /* UIDevice+CYUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FA85CD1CCA05CA00CA39B9 /* UIDevice+CYUtils.swift */; };
+		61FA85D01CCA080500CA39B9 /* Float+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FA85CF1CCA080500CA39B9 /* Float+Utils.swift */; };
+		61FA85D21CCA08C000CA39B9 /* UILabel+CYUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FA85D11CCA08C000CA39B9 /* UILabel+CYUtils.swift */; };
+		9C746D3D5C6CE56C31CEAB99 /* Pods_CYBaseProjectSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABF59662115C74326DE6C02 /* Pods_CYBaseProjectSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4ABF59662115C74326DE6C02 /* Pods_CYBaseProjectSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CYBaseProjectSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6107255F1CC5E77900FB77B0 /* PullRefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRefreshHeaderView.swift; sourceTree = "<group>"; };
 		610725611CC6085400FB77B0 /* PullRefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRefreshFooterView.swift; sourceTree = "<group>"; };
 		610725641CC61F8100FB77B0 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +53,15 @@
 		611944951CC4DB6F001681F2 /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		611944971CC4E2B5001681F2 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		611944A31CC50A88001681F2 /* PullRefreshBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRefreshBaseView.swift; sourceTree = "<group>"; };
+		61FA85C51CC9F75100CA39B9 /* UIColor+CYUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CYUtils.swift"; sourceTree = "<group>"; };
+		61FA85C71CC9FB6500CA39B9 /* UIImage+CYUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CYUtils.swift"; sourceTree = "<group>"; };
+		61FA85C91CC9FD5600CA39B9 /* UIFont+CYUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+CYUtils.swift"; sourceTree = "<group>"; };
+		61FA85CB1CC9FD8B00CA39B9 /* UIScreen+CYUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+CYUtils.swift"; sourceTree = "<group>"; };
+		61FA85CD1CCA05CA00CA39B9 /* UIDevice+CYUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+CYUtils.swift"; sourceTree = "<group>"; };
+		61FA85CF1CCA080500CA39B9 /* Float+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Utils.swift"; sourceTree = "<group>"; };
+		61FA85D11CCA08C000CA39B9 /* UILabel+CYUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+CYUtils.swift"; sourceTree = "<group>"; };
+		BBD9EFD01E85106AF0AE422A /* Pods-CYBaseProjectSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYBaseProjectSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYBaseProjectSwift/Pods-CYBaseProjectSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		C8F444B640E1BCEBD0623B37 /* Pods-CYBaseProjectSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYBaseProjectSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYBaseProjectSwift/Pods-CYBaseProjectSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +69,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C746D3D5C6CE56C31CEAB99 /* Pods_CYBaseProjectSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0341041910642F7ED2C5AB8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBD9EFD01E85106AF0AE422A /* Pods-CYBaseProjectSwift.debug.xcconfig */,
+				C8F444B640E1BCEBD0623B37 /* Pods-CYBaseProjectSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		610725631CC61F6800FB77B0 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +98,8 @@
 			children = (
 				611944601CC4CFC9001681F2 /* CYBaseProjectSwift */,
 				6119445F1CC4CFC9001681F2 /* Products */,
+				0341041910642F7ED2C5AB8D /* Pods */,
+				B3F714E1526F55295B0A9A9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +207,7 @@
 		611944821CC4D17B001681F2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				61FA85C41CC9F73D00CA39B9 /* UI */,
 				6119448C1CC4D20D001681F2 /* Foundation */,
 				6119448D1CC4D20D001681F2 /* Request */,
 			);
@@ -187,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				611944911CC4D249001681F2 /* String+Utils.swift */,
+				61FA85CF1CCA080500CA39B9 /* Float+Utils.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -217,6 +249,27 @@
 			path = PullRefresh;
 			sourceTree = "<group>";
 		};
+		61FA85C41CC9F73D00CA39B9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				61FA85C51CC9F75100CA39B9 /* UIColor+CYUtils.swift */,
+				61FA85C71CC9FB6500CA39B9 /* UIImage+CYUtils.swift */,
+				61FA85C91CC9FD5600CA39B9 /* UIFont+CYUtils.swift */,
+				61FA85CB1CC9FD8B00CA39B9 /* UIScreen+CYUtils.swift */,
+				61FA85CD1CCA05CA00CA39B9 /* UIDevice+CYUtils.swift */,
+				61FA85D11CCA08C000CA39B9 /* UILabel+CYUtils.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B3F714E1526F55295B0A9A9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ABF59662115C74326DE6C02 /* Pods_CYBaseProjectSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 611944701CC4CFC9001681F2 /* Build configuration list for PBXNativeTarget "CYBaseProjectSwift" */;
 			buildPhases = (
+				C7BE503F43BCA71107EC3151 /* Check Pods Manifest.lock */,
 				6119445A1CC4CFC9001681F2 /* Sources */,
 				6119445B1CC4CFC9001681F2 /* Frameworks */,
 				6119445C1CC4CFC9001681F2 /* Resources */,
+				49C870CD68CEAD3CA0886545 /* Embed Pods Frameworks */,
+				54C1D40CA71A18B669AAC27A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,20 +337,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49C870CD68CEAD3CA0886545 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYBaseProjectSwift/Pods-CYBaseProjectSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54C1D40CA71A18B669AAC27A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYBaseProjectSwift/Pods-CYBaseProjectSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BE503F43BCA71107EC3151 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6119445A1CC4CFC9001681F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61FA85CA1CC9FD5600CA39B9 /* UIFont+CYUtils.swift in Sources */,
+				61FA85C81CC9FB6500CA39B9 /* UIImage+CYUtils.swift in Sources */,
+				61FA85CC1CC9FD8B00CA39B9 /* UIScreen+CYUtils.swift in Sources */,
 				611944921CC4D249001681F2 /* String+Utils.swift in Sources */,
 				610725601CC5E77900FB77B0 /* PullRefreshHeaderView.swift in Sources */,
 				611944871CC4D1A7001681F2 /* BaseService.swift in Sources */,
+				61FA85D21CCA08C000CA39B9 /* UILabel+CYUtils.swift in Sources */,
 				611944851CC4D18F001681F2 /* BaseModel.swift in Sources */,
 				610725621CC6085400FB77B0 /* PullRefreshFooterView.swift in Sources */,
+				61FA85C61CC9F75100CA39B9 /* UIColor+CYUtils.swift in Sources */,
 				611944941CC4DA0D001681F2 /* ResponseStatusModel.swift in Sources */,
 				611944891CC4D1BC001681F2 /* BaseView.swift in Sources */,
+				61FA85CE1CCA05CA00CA39B9 /* UIDevice+CYUtils.swift in Sources */,
 				611944641CC4CFC9001681F2 /* ViewController.swift in Sources */,
 				611944A41CC50A88001681F2 /* PullRefreshBaseView.swift in Sources */,
+				61FA85D01CCA080500CA39B9 /* Float+Utils.swift in Sources */,
 				611944961CC4DB6F001681F2 /* PageModel.swift in Sources */,
 				611944901CC4D22D001681F2 /* CommonHTTPClient.swift in Sources */,
 				610725651CC61F8100FB77B0 /* TestTableViewController.swift in Sources */,
@@ -394,9 +505,11 @@
 		};
 		611944711CC4CFC9001681F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD9EFD01E85106AF0AE422A /* Pods-CYBaseProjectSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CYBaseProjectSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jasper.CYBaseProjectSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,9 +518,11 @@
 		};
 		611944721CC4CFC9001681F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8F444B640E1BCEBD0623B37 /* Pods-CYBaseProjectSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CYBaseProjectSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jasper.CYBaseProjectSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
