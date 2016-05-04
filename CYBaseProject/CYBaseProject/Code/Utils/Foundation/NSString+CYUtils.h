@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#warning @"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=0\">" add this to the beginning of html, can make font bigger
+
 @interface NSString (CYUtils)
 
 + (BOOL)cy_stringIsEmptyOrNull:(NSString *)str;

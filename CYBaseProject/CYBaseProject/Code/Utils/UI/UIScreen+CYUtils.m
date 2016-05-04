@@ -12,28 +12,31 @@
 
 - (CYScreenType)screenType {
     
-    CGFloat screenWidth = self.bounds.size.width;
-    CGFloat screenHeight = self.bounds.size.height;
-    // 1 point Deviation
-    if (screenWidth <= 321) {
+    CGFloat screenWidth = MIN(self.bounds.size.width, self.bounds.size.height);
+    CGFloat screenHeight = MAX(self.bounds.size.width, self.bounds.size.height);
+    
+    if (screenWidth == 320
+        && screenHeight == 480) {
         
-        if (screenHeight <= 481) {
-            
-            return CYScreenType3_5;
-        } else {
-            
-            return CYScreenType4;
-        }
-    } else if (screenWidth <= 375) {
+        return CYScreenType3_5;
+    } else if (screenWidth == 320
+               && screenHeight == 568) {
+        
+        return CYScreenType4;
+    } else if (screenWidth == 375
+               && screenHeight == 667) {
         
         return CYScreenType4_7;
-    } else if (screenWidth <= 414) {
+    } else if (screenWidth == 414
+               && screenHeight == 736) {
         
         return CYScreenType5_5;
-    } else if (screenWidth <= 769) {
+    } else if (screenWidth == 768
+               && screenHeight == 1024) {
         
         return CYScreenType_iPad;
-    } else if (screenWidth <= 1025) {
+    } else if (screenWidth == 1024
+               && screenHeight == 1366) {
         
         return CYScreenType12_9;
     } else {

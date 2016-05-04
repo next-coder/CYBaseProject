@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [UIScreen mainScreen].screenType;
+    NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].bounds));
     return YES;
 }
 
