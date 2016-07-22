@@ -14,7 +14,7 @@
     
     if (self = [super initWithDictionary:dic]) {
         
-        if (![NSDictionary dictionaryIsEmptyOrNull:dic]) {
+        if (![NSDictionary cy_dictionaryIsEmptyOrNull:dic]) {
             
             _code = [dic cy_integerValueForKey:@"code"];
             _message = [dic cy_stringValueForKey:@"msg"];

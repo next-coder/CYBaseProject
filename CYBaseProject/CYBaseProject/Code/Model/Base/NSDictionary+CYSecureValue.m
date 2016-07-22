@@ -135,7 +135,7 @@
 }
 
 #pragma mark - check empty
-+ (BOOL)dictionaryIsEmptyOrNull:(NSDictionary *)dic {
++ (BOOL)cy_dictionaryIsEmptyOrNull:(NSDictionary *)dic {
     
     if (!dic
         || ![dic isKindOfClass:[NSDictionary class]]

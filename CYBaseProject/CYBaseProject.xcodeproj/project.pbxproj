@@ -49,6 +49,7 @@
 		6150FFF31CC0D26700CF9C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6150FFF21CC0D26700CF9C6F /* Assets.xcassets */; };
 		6150FFF61CC0D26700CF9C6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6150FFF41CC0D26700CF9C6F /* LaunchScreen.storyboard */; };
 		7E1B8C14E610A6CD7CCEF83A /* libPods-CYBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E2200C71FD862547D492C1 /* libPods-CYBaseProject.a */; };
+		A36D7E751D41F50D00124EF1 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = A36D7E741D41F50D00124EF1 /* NSObject+Runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,8 @@
 		6150FFF51CC0D26700CF9C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6150FFF71CC0D26700CF9C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847B610E626517A61DC13642 /* Pods-CYBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYBaseProject/Pods-CYBaseProject.release.xcconfig"; sourceTree = "<group>"; };
+		A36D7E731D41F50D00124EF1 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		A36D7E741D41F50D00124EF1 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 		A5E2200C71FD862547D492C1 /* libPods-CYBaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYBaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -263,6 +266,8 @@
 				615000371CC0D6D600CF9C6F /* NSDictionary+CYJson.m */,
 				6150003A1CC0D6DC00CF9C6F /* NSString+CYUtils.h */,
 				6150003B1CC0D6DC00CF9C6F /* NSString+CYUtils.m */,
+				A36D7E731D41F50D00124EF1 /* NSObject+Runtime.h */,
+				A36D7E741D41F50D00124EF1 /* NSObject+Runtime.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -552,6 +557,7 @@
 				615000061CC0D35C00CF9C6F /* CYBaseModel.m in Sources */,
 				615000091CC0D36B00CF9C6F /* CYBaseService.m in Sources */,
 				6150002C1CC0D4AB00CF9C6F /* CYPullRefreshHeaderView.m in Sources */,
+				A36D7E751D41F50D00124EF1 /* NSObject+Runtime.m in Sources */,
 				6150FFEE1CC0D26700CF9C6F /* ViewController.m in Sources */,
 				6150001B1CC0D3F100CF9C6F /* CYBaseViewModel.m in Sources */,
 				615000601CC0DD4800CF9C6F /* UIImage+CYUtils.m in Sources */,

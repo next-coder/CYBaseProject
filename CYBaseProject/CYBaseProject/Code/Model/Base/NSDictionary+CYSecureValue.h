@@ -21,6 +21,6 @@
 - (double)cy_doubleValueForKey:(id)key;
 - (BOOL)cy_boolValueForKey:(id)key;
 
-+ (BOOL)dictionaryIsEmptyOrNull:(NSDictionary *)dic;
++ (BOOL)cy_dictionaryIsEmptyOrNull:(NSDictionary *)dic;
 
 @end

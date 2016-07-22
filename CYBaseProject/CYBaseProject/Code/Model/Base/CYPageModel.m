@@ -14,7 +14,7 @@
     
     if (self = [super initWithDictionary:dic]) {
         
-        if (![NSDictionary dictionaryIsEmptyOrNull:dic]) {
+        if (![NSDictionary cy_dictionaryIsEmptyOrNull:dic]) {
             _total = [dic cy_integerValueForKey:@"total"];
             _page = [dic cy_integerValueForKey:@"page"];
         }

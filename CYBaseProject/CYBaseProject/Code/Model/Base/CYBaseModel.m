@@ -13,10 +13,42 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dic {
     
     if (self = [super init]) {
-        
-        
+
+        NSDictionary *keysForModelProperties = [self.class keysForModelProperties];
+        [dic enumerateKeysAndObjectsUsingBlock:^(NSString *key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+
+            NSString *propertyKey = (keysForModelProperties[key] ? : key);
+            [self setValue:obj forKey:propertyKey];
+        }];
     }
     return self;
+}
+
+- (void)setValue:(id)value forKey:(NSString *)key {
+
+    if (value == [NSNull null]) {
+
+        value = nil;
+    }
+
+    [super setValue:value forKey:key];
+}
+
+- (void)setValue:(id)value forUndefinedKey:(nonnull NSString *)key {
+
+    // cannot find the key
+    NSLog(@"some key : %@, value: %@ is undefined", key, value);
+
+}
+
+- (void)setNilValueForKey:(NSString *)key {
+
+    // just do nothing
+}
+
++ (NSDictionary *)keysForModelProperties {
+
+    return nil;
 }
 
 + (instancetype)modelFromDictionary:(NSDictionary *)dic {
@@ -26,8 +58,10 @@
 
 + (NSArray *)modelArrayFromDictionaryArray:(NSArray *)dicArray {
     
-    if (![self arrayIsNullOrEmpty:dicArray]) {
-        
+    if (dicArray
+        && [dicArray isKindOfClass:[NSArray class]]
+        && [dicArray count] != 0) {
+
         NSMutableArray *modelArray = [NSMutableArray arrayWithCapacity:[dicArray count]];
         for (NSDictionary *dic in dicArray) {
             
@@ -40,17 +74,6 @@
         return modelArray;
     }
     return nil;
-}
-
-+ (BOOL)dictionaryIsNullOrEmpty:(NSDictionary *)dic {
-    
-    if (!dic
-        || ![dic isKindOfClass:[NSDictionary class]]
-        || [dic count] == 0) {
-        
-        return YES;
-    }
-    return NO;
 }
 
 + (BOOL)arrayIsNullOrEmpty:(NSArray *)array {

@@ -13,10 +13,11 @@
 
 - (instancetype)initWithDictionary:(NSDictionary *)dic;
 
+// if subclass rewrite this one, it must be call super, and add super's list to the new list
+// this method default return nil, which means all the property key and data key are the same
++ (NSDictionary *)keysForModelProperties;
+
 + (instancetype)modelFromDictionary:(NSDictionary *)dic;
 + (NSArray *)modelArrayFromDictionaryArray:(NSArray *)dicArray;
-
-+ (BOOL)dictionaryIsNullOrEmpty:(NSDictionary *)dic;
-+ (BOOL)arrayIsNullOrEmpty:(NSArray *)array;
 
 @end
